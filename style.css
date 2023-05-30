@@ -1,0 +1,146 @@
+*{
+    margin: 0vh;
+    padding: 0vh;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    font-size: 1 rem;
+    text-decoration: none;
+ 
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+    height: 8vh;
+    width: 100%;
+    column-gap: 5%;
+    font-size: 0.8rem;
+    background-color: #78F4A4;
+
+    font-weight: bolder;
+    font-size: rem;
+}
+
+.menu {
+    display: flex;
+    
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li{
+    padding: 1vh;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: double;
+    color: #3C3161;
+    font-weight: bolder;
+    font-size: 1,5rem;
+}
+
+.menu li a:hover{
+    transform: scale(1.1);
+    color: #D3148A;
+}
+
+.header img{
+    width: 8vh;
+    border: 1px solid #3C3161; 
+    border-radius: 15%;
+    margin: 2px 4px;
+
+}
+
+.header img:hover{
+    transform: scale(1.1);
+    border-color: #D3148A;
+}
+
+
+.painel{
+    display: block;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    color: #78F4A4;
+    padding-left: 2vh;
+}
+
+.painel::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(imagens/fundo.jpg) fixed;
+    background-size: cover;
+    background-position: bottom;
+    z-index: -1;
+
+}
+
+.painel h1{
+    padding-top: 15vh;
+    padding-bottom: 2vh;
+}
+
+.painel p{
+    padding-bottom: 2vh;
+}
+
+button{
+    background-color: #3C3161;
+    border: none; /* remove a borda do botão */
+    color: #78F4A4; /* define a cor do texto do botão */
+    padding: 1vh 4vh; /* define o espaço interno do botão (10px superior/inferior e 20px esquerda/direita) */
+    text-align: center; /* centraliza o texto no botão */
+    text-decoration: none; /* remove o sublinhado padrão do texto */
+    display: inline-block; /* define o tipo de exibição do elemento como "bloco inline" */
+    font-size: 1rem; /* define o tamanho da fonte do texto do botão */
+    margin: 3vh 2vh; /* define as margens externas do botão (4px superior/inferior e 2px esquerda/direita) */
+    border-radius: 25px; /* define o raio de curvatura das bordas do botão (valor de 25px cria um botão com bordas arredondadas) */
+    cursor: pointer; /* define o cursor do mouse como "mão" quando o usuário passa o mouse sobre o botão */   
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: #D3148A;
+    color: white;
+}
+
+.section-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2vh;
+    background-color: #78F4A4;
+    color: #3C3161;
+}
+
+.grid-jogos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* define 3 colunas */;
+    padding-top: 5vh;
+    margin: 0 auto;
+    width: 100%;
+    row-gap : 10px;
+    column-gap: 0px;
+    background-color: #010E38;
+    color: #78F4A4;
+}
+
+
+.grid-jogos img{
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover; /* ajusta a imagem para preencher o contêiner */
+    border: 1px solid #3C3161; 
+    border-radius: 15%;
+    margin: 2px 4px;
+}
